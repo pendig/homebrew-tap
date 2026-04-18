@@ -9,10 +9,12 @@ class Videocut < Formula
 
   depends_on "ffmpeg"
   depends_on "node"
-  depends_on "python@3.9"
+  depends_on "python@3.11"
 
   def install
-    virtualenv_install_with_resources
+    virtualenv_create(libexec, "python3.11")
+    system libexec/"bin/pip", "install", "-v", "--ignore-installed", buildpath
+    bin.install_symlink libexec/"bin/videocut"
   end
 
   test do
