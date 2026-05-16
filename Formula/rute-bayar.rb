@@ -29,6 +29,6 @@ class RuteBayar < Formula
   end
 
   test do
-    system "#{bin}/rute-bayar", "version"
+    system bin/"rute-bayar", "version"
   end
 end
