@@ -1,26 +1,26 @@
 class RuteBayar < Formula
   desc "Payment router CLI and webhook daemon for Indonesian payment gateways"
   homepage "https://github.com/pendig/rute-bayar"
-  version "0.1.2"
+  version "0.1.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/pendig/rute-bayar/releases/download/v0.1.2/rutebayar-darwin-arm64"
-      sha256 "a5b786a3a777493f0a1bae14f9a0787d3033ca1d9a0bad4790388900535b1afc"
+      url "https://github.com/pendig/rute-bayar/releases/download/v0.1.4/rutebayar-darwin-arm64"
+      sha256 "17a8d5d40dcce471dfd310dca2ffd39a5c32229588741d924347ccec9bdbc850"
     else
-      url "https://github.com/pendig/rute-bayar/releases/download/v0.1.2/rutebayar-darwin-amd64"
-      sha256 "a9eca34a0faa6ea6f6c86be460e4ec6abfb389edeaf28943ef4c58792c15366f"
+      url "https://github.com/pendig/rute-bayar/releases/download/v0.1.4/rutebayar-darwin-amd64"
+      sha256 "68e6d563d5ca560ea4ccc5f52fa5956e70f96311bf3c5414ec875b004fda5c31"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pendig/rute-bayar/releases/download/v0.1.2/rutebayar-linux-arm64"
-      sha256 "f2e224054890eca0e669f2a7e0c39a5119c46b5bc2c51d30b0371c36a9d3b857"
+      url "https://github.com/pendig/rute-bayar/releases/download/v0.1.4/rutebayar-linux-arm64"
+      sha256 "301568f4fee924506a0796ff9eade7b646fdceb9c77c8625be0293b59dc46482"
     else
-      url "https://github.com/pendig/rute-bayar/releases/download/v0.1.2/rutebayar-linux-amd64"
-      sha256 "f73825913c2e37a46bbd4a4583f2ddaa72d2638eca7bfbe5c639bc83faf8f289"
+      url "https://github.com/pendig/rute-bayar/releases/download/v0.1.4/rutebayar-linux-amd64"
+      sha256 "ec5fb9eae690b8678853c34096d69b0b29b2399228d57e4f13a5d51d2fa37225"
     end
   end
 
